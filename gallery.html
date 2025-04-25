@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+       
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let scrollSpeed = 1; // Adjust the speed of scrolling
+            let scrollInterval = 10; // Adjust the interval for smoothness
+
+            function autoScroll() {
+                if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+                    window.scrollTo(0, 0); // Instantly reset to the top when reaching the bottom
+                } else {
+                    window.scrollBy(0, scrollSpeed); // Scroll down by the specified speed
+                }
+            }
+
+            setInterval(autoScroll, scrollInterval);
+        });
+    </script>
+</head>
+<body>
+    <img src="images/mockup.png" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/1.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/2.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/3.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/4.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/5.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/6.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/7.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/8.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/9.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/10.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/11.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+    <img src="images/gallery/12.jpg" alt="" width="100%" height="auto" style="display: block; margin: 0 auto;"/>
+</body>
+</html>
