@@ -5,133 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bigowl</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navbar Section -->
+     <div class="space"></div>
     <div class="navbar">
-        <img src="./images/logo.png" alt="" width="50px" height="50px" class="logo"/>
+        <img src="./images/logo.png" alt="Bigowl Logo" width="50px" height="50px" class="logo" />
         <nav>
             <ul>
-                +977 9819549240
-                <!-- <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li> -->
+                <li>
+                    <button id="contactUsButton" class="contact-us-btn">Contact Us</button>
+                </li>
             </ul>
         </nav>
     </div>
-    <div class="space"></div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <h3>Contact Us</h3>
+            <p>Phone: +977 9804510067</p>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@bigowlstore710" target="_blank">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+                <a href="https://www.facebook.com/share/1XjK1YFgr3/?mibextid=wwXIfr" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://wa.me/9819549240" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/bigowlstore710" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="content">
         <div class="content_left">
-
             <h2>Unleash Your Creativity!</h2>
             <p>Transform your ideas into reality with our custom printing solutions. Your imagination, our expertise—together, we create magic!</p>
-
-
-        
-
+        </div>
+        <div class="content_right">
+            <div class="image-container">
+                <img src="./images/mockuplow.PNG" alt="Bigowl Store" class="content_image loading-animation" />
+            </div>
+        </div>
     </div>
-    <div class="content_right">
-        <div class="image-container">
-            <img src="./images/mockuplow.PNG" alt="Bigowl Store" class="content_image loading-animation"/>
+
+    <!-- Social Buttons -->
+    <div class="social_buttons">
+        <a href="https://www.tiktok.com/@bigowlstore710" target="_blank" class="social_button">
+            <div class="tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </div>
+        </a>
+        <a href="https://www.facebook.com/share/1XjK1YFgr3/?mibextid=wwXIfr" target="_blank" class="social_button">
+            <div class="facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </div>
+        </a>
+        <a href="https://wa.me/9819549240" target="_blank" class="social_button">
+            <div class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </div>
+        </a>
+        <a href="https://www.instagram.com/bigowlstore710" target="_blank" class="social_button">
+            <div class="instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </div>
+        </a>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="imapSection">
+        <div class="mobile-frame">
+            <iframe title="Gallery" class="iframe-map" src="gallery.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="galleryText">
+            <h2>Printed T-Shirts and Cups</h2>
+            <p>Explore our exclusive collection of printed T-shirts and cups, designed to bring your ideas to life. Perfect for gifts, events, or personal use!</p>
+        </div>
+    </div>
+
+    <!-- Equipment Section -->
+    <div class="equipmentSection">
+        <h2>Our Equipment</h2>
+        <div class="equipmentDetails">
+            <div class="equipmentItem">
+                <img src="./images/devices/printer.png" alt="Epson L130 Printer" class="equipmentImage" />
+                <p><strong>Printer:</strong> Epson L130 - Known for its high-quality and reliable printing performance.</p>
+            </div>
+            <div class="equipmentItem">
+                <img src="./images/devices/heatpressmachine.jpg" alt="Heat Press Machine" class="equipmentImage" />
+                <p><strong>Heat Press Machine:</strong> Best Quality Heat Press Machine - Ensuring precision and durability in sublimation printing.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .equipmentSection {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .equipmentDetails {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .equipmentItem {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .equipmentImage {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <!-- Sublimation Printing Section -->
+    <div class="sublimationSection">
+        <h2>Why Do We Need Sublimation Printing?</h2>
+        <div class="qa-container"></div>
+            <div class="qa-item">
+                <div class="qa-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="qa-content">
+                    <p>Sublimation printing is essential for creating high-quality, customized designs on various materials. It is widely used for personalized gifts, promotional items, and professional branding due to its ability to produce vibrant, detailed, and durable prints.</p>
+                </div>
+            </div>
         </div>
 
-        <style>
-            .loading-animation {
-                opacity: 0;
-                transform: scale(0.8);
-                animation: fadeInScale 1.5s ease-in-out forwards;
-            }
+        <div class="sublimationSection">
 
-            @keyframes fadeInScale {
-                0% {
-                    opacity: 0;
-                    transform: scale(0.8);
-                }
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-        </style>
+            <h3>Is Sublimation Printing Permanent?</h3>
+            <div class="qa-container">
+            <div class="qa-item">
+                <div class="qa-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="qa-content">
+                    <p>Yes, sublimation printing is permanent. The dye becomes part of the material itself, ensuring that the design does not fade, peel, or crack over time. This makes it an ideal choice for long-lasting and professional-quality prints.</p>
+                </div>
+            </div>
+        </div>
+        <h3>Can Sublimation Printing Be Done on T-Shirts and Cups?</h3>
+        <div class="qa-container">
+            <div class="qa-item">
+                <div class="qa-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="qa-content">
+                    <p>Absolutely! Sublimation printing works perfectly on polyester T-shirts and specially coated cups. It ensures vivid colors and intricate designs, making it a popular choice for creating personalized apparel and drinkware.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="social_buttons">
-    <a href="https://www.tiktok.com/@bigowlstore710" target="_blank" class="social_button ">
-        <div class="tiktok">
+    <style>
+        .qa-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
 
-            <i class="fab fa-tiktok"></i> TikTok
-        </div>
-    </a>
-    <a href="https://www.facebook.com/share/1XjK1YFgr3/?mibextid=wwXIfr" target="_blank" class="social_button">
-        <div class="facebook">
+        .qa-item {
+            display: flex;
+            align-items: flex-start;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-            <i class="fab fa-facebook-f"></i> Facebook
-        </div>
-        </a>
-        <a href="https://wa.me/9819549240" target="_blank" class="social_button "> 
-            <div class="whatsapp">
-                <i class="fab fa-whatsapp"></i>
-                whatsapp
+        .qa-icon {
+            flex-shrink: 0;
+            font-size: 30px;
+            color: #007bff;
+            margin-right: 15px;
+        }
 
-            </div> 
-</a>
-        <a href="https://www.instagram.com/bigowlstore710" target="_blank" class="social_button ">
+        .qa-content {
+            flex-grow: 1;
+        }
 
-            <div class="instagram">
+        .qa-content p {
+            margin: 0;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
 
-                <i class="fab fa-instagram"></i> instagram 
-            </div>
-            </a>
+        .sublimationSection h2, .sublimationSection h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
+        .sublimationSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+    </style>
 
+    <style>
+        .sublimationSection {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
 
-        </div>
-        
+        .sublimationSection h2, .sublimationSection h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
 
+        .sublimationSection p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+    </style>
 
-
-            
-            <div class="imapSection">
-                
-               
-                
-                
-                <div class="mobile-frame">
-                    
-                    <iframe 
-                    title="Gallery" 
-                    class="iframe-map" 
-                    src="gallery.html" 
-                    frameborder="0" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-
-                <div class="galleryText">
-                    <h2>Printed T-Shirts and Cups</h2>
-                    <p>Explore our exclusive collection of printed T-shirts and cups, designed to bring your ideas to life. Perfect for gifts, events, or personal use!</p>
-                </div>
-            
-
-    </div>
-    </div>
-
-
+    <!-- Map Section -->
     <div class="mapSection">
-
         <h2>Find Us Here</h2>
-        
-            <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d885.050176425346!2d81.63812917072539!3d28.064209729303208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sne!2snp!4v1745617157890!5m2!1sne!2snp" 
-            title="Google Map" 
-            class="iframe-map google_map" 
-            frameborder="0" 
-            allowfullscreen>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d885.050176425346!2d81.63812917072539!3d28.064209729303208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sne!2snp!4v1745617157890!5m2!1sne!2snp" 
+                title="Google Map" class="iframe-map google_map" frameborder="0" allowfullscreen>
         </iframe>
     </div>
-        
 
+    <!-- Styles -->
+    <style>
+        .contact-us-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+  position: relative;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .social-links a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .social-links a i {
+            margin-right: 5px;
+        }
+
+        .loading-animation {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script>
+        const contactUsButton = document.getElementById('contactUsButton');
+        const contactModal = document.getElementById('contactModal');
+        const closeModal = document.getElementById('closeModal');
+
+        contactUsButton.addEventListener('click', () => {
+            contactModal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener('click', () => {
+            contactModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
