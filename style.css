@@ -205,6 +205,7 @@ h1{
     margin-top: 20px;
 }
 .mobile-frame {
+    background-color:white;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -213,7 +214,7 @@ h1{
     max-width: 300px;
     height: 450px;
     margin:20px;
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     border-radius: 20px;
     padding: 10px;
     background-color: #000000;
@@ -226,7 +227,7 @@ h1{
     transform: translateX(-50%);
     width: 50px;
     height: 20px;
-    background-color: #000;
+    background-color: #000000;
     border-radius: 5px;
 }
 .iframe-map {
@@ -256,7 +257,6 @@ h2 {
     height: 500px;
     border: none;
     border-radius: 10px;
-    margin-top: 20px;
 }
 
 .mapSection{
@@ -274,4 +274,14 @@ h2 {
     text-align: center;
     margin: 20px 0;
 
+}
+
+.google_map{
+    max-width: 1200px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
 }
